@@ -172,31 +172,6 @@ export default {
 		}
 	},
 	methods: {
-		// getProducts(page = 1) {  //加入預設值
-		// 	const vm = this;
-		// 	let api = `${process.env.API_PATH}/api/${process.env.CUSTOM_PATH}/admin/products`;
-		// 	if (page == 'all') {
-		// 		api += `/all`;
-		// 		vm.allPage = true;
-		// 	} else {
-		// 		api += `?page=${page}`;
-		// 		vm.allPage = false;
-		// 	}
-		// 	vm.isLoading = true;
-	 //    this.$http.get(api).then((response) => {
-	 //      console.log(response.data.products);
-	 //      vm.products = response.data.products;
-	 //      // console.log(vm.products.reverse());
-	 //    	vm.isLoading = false;
-	 //    	// if (page !== 'all') { vm.pagination = response.data.pagination }
-	 //    	if (page == 'all') { 
-  //         // vm.products = vm.products.reverse()
-  //         console.log(vm.products.reverse());
-  //       } else {
-  //         vm.pagination = response.data.pagination
-  //       }
-	 //    })
-		// },
 		getProducts(page = 1) {
       const vm = this;
       let api = `${process.env.API_PATH}/api/${process.env.CUSTOM_PATH}/admin/products`;
