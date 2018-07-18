@@ -1,4 +1,4 @@
-# Vue.js 電商網站：後台管理系統
+# Vue.js 購物網站：後台管理系統
 
 ![商品管理介面](https://i.imgur.com/dBy8s4X.png)
 
