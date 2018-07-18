@@ -1,0 +1,8 @@
+// custom scss
+@import "~bootstrap/scss/functions"; //functions為bootstrap套用變數的方法
+@import "./helpers/_variables"; 
+// bootstrap
+@import "~bootstrap/scss/bootstrap"; 
+
+// dashboard
+@import "./_dashboard"; 
