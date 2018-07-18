@@ -1,6 +1,6 @@
 # Vue.js 購物網站：後台管理系統
 
-![商品管理介面](https://i.imgur.com/dBy8s4X.png)
+![商品管理介面](https://i.imgur.com/9SFIwde.png)
 
 ## Demo
 https://vii120.github.io/vue-ec-admin/
