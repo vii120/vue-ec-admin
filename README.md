@@ -1,6 +1,6 @@
 # Vue.js 購物網站：後台管理系統
 
-![商品管理介面](https://i.imgur.com/9SFIwde.png)
+![商品管理介面](https://i.imgur.com/ib1RFZM.png)
 
 ## Demo
 https://vii120.github.io/vue-ec-admin/
@@ -19,7 +19,7 @@ https://vii120.github.io/vue-ec-admin/
 
 ### 3. 訂單管理
 * 權限：需登入
-* 功能：僅查看
+* 功能：查看，點擊詳細內容會有付款連結
 
 ### 4. 優惠券管理
 * 權限：需登入
