@@ -3,7 +3,7 @@
 		<!-- loading plug-in -->
     <loading :active.sync="isLoading"></loading>
 		<!-- coupon table -->
-		<div class="row justify-content-between mt-4">
+		<div class="d-flex justify-content-between mt-4">
 			<h3>優惠券管理列表 Coupon Management</h3>
 			<button class="btn btn-outline-primary" @click="openModal(true)">建立新優惠券</button>
 		</div>

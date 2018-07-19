@@ -3,7 +3,7 @@
 		<!-- loading plug-in -->
     <loading :active.sync="isLoading"></loading>
 		<!-- product table -->
-		<div class="row justify-content-between mt-4">
+		<div class="d-flex justify-content-between mt-4">
 			<h3>商品上架管理列表 Product Management</h3>
 			<button class="btn btn-outline-primary" @click="openModal(true)">建立新商品</button>
 		</div>
@@ -232,7 +232,7 @@ export default {
         console.log(this.$refs);
         // vm.products = response.data.products;
       });
-      this.$refs.files.value = ''; 
+      this.$refs.files.value = '';  //清除上傳檔案名
       // console.log(this.$refs.files);
     },
     removeProduct(item) {

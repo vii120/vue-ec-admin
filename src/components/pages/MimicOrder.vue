@@ -2,7 +2,7 @@
   <div>
     <loading :active.sync="isLoading"></loading>
 		<!-- product table -->
-    <div class="row justify-content-between mt-4">
+    <div class="d-flex justify-content-between mt-4">
       <h3>訂單模擬系統 Mimic Order Management</h3>
     </div>
     <div class="row mt-4">
