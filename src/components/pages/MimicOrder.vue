@@ -86,9 +86,9 @@
 							<footer class="blockquote-footer text-right">{{ product.description }}</footer>
 						</blockquote>
 						<div class="d-flex justify-content-between align-items-baseline">
-							<div class="h4" v-if="!product.price">{{ product.origin_price }} 元</div>
-							<del class="h6" v-if="product.price">原價 {{ product.origin_price }} 元</del>
-							<div class="h4" v-if="product.price">現在只要 {{ product.price }} 元</div>
+							<div class="h4" v-if="!product.price">{{ product.origin_price | currency}} 元</div>
+							<del class="h6" v-if="product.price">原價 {{ product.origin_price | currency}} 元</del>
+							<div class="h4" v-if="product.price">現在只要 {{ product.price | currency}} 元</div>
 						</div>
 						<select name="" class="form-control mt-3" v-model="product.num">
 							<option value="0" selected disabled>請選擇商品數量</option>
@@ -96,7 +96,7 @@
 						</select>
 					</div>
 					<div class="modal-footer">
-						<div class="text-muted text-nowrap mr-3">小計 <strong>{{ product.num * product.price }}</strong> 元</div>
+						<div class="text-muted text-nowrap mr-3">小計 <strong>{{ product.num * product.price | currency}}</strong> 元</div>
 						<button type="button" class="btn btn-primary" @click="addtoCart(product.id, product.num)">
               <i class="fas fa-spinner fa-spin" v-if="product.id === status.loadingItem"></i>
                加到購物車
@@ -138,11 +138,11 @@
 				  <tfoot>
 				    <tr>
 				      <td colspan="3" class="text-right">總計價格</td>
-				      <td class="text-right">{{ cart.total }}</td>
+				      <td class="text-right">{{ cart.total | currency}}</td>
 				    </tr>
 				    <tr v-if="cart.final_total!==cart.total">
 				      <td colspan="3" class="text-right text-success">折扣後價格</td>
-				      <td class="text-right text-success">{{ cart.final_total }}</td>
+				      <td class="text-right text-success">{{ cart.final_total | currency}}</td>
 				    </tr>
 				  </tfoot>
 				</table>
@@ -187,7 +187,7 @@
 		  
 		    <div class="form-group">
 		      <label for="useraddress">留言</label>
-		      <textarea name="" id="" class="form-control" cols="30" rows="10" v-model="form.msg"></textarea>
+		      <textarea name="" id="" class="form-control" cols="30" rows="10" v-model="form.message"></textarea>
 		    </div>
 
 		    <div class="text-right">
@@ -225,7 +225,7 @@ export default {
       		tel: '',
       		address: '',
       	},
-      	msg: '',
+      	message: '',
       },
     };
   },

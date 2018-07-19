@@ -99,7 +99,6 @@
 												</div>
 											</td>
 								    </tr>
-									    
 								    <tr>
 								      <th scope="row">金額</th>
 								      <td>{{tempOrder.total | currency}}</td>
@@ -112,6 +111,10 @@
 													<router-link :to="`/oreder_confirm/${tempOrder.id}`" target="_blank">查看付款頁面</router-link>
 												</span>
 								      </td>
+								    </tr>
+								    <tr>
+								      <th scope="row">留言</th>
+								      <td>{{tempOrder.message}}</td>
 								    </tr>
 								  </tbody>
 								</table>
