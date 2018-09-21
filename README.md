@@ -7,6 +7,8 @@ https://vii120.github.io/vue-ec-admin/dist/
 
 ## Intro
 
+使用vue cli及vue router製作購物網站的後台管理介面，並加入訂單模擬系統
+
 ### 1. 登入畫面
 
 管理功能 *(下述2-4點)* 需要登入才可查看及使用
