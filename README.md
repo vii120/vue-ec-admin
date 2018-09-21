@@ -37,3 +37,6 @@ https://vii120.github.io/vue-ec-admin/dist/
 
 ## API
 [六角學院 vue-course-api](https://github.com/hexschool/vue-course-api-wiki/wiki)
+
+## Reference
+六角學院 [Vue 出一個電商網站 ](https://www.udemy.com/vue-hexschool/)
