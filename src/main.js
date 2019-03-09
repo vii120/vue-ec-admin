@@ -30,6 +30,8 @@ Vue.component('Loading', Loading);  //全域元件
 Vue.filter('currency', currencyFilter);  //全域filter
 Vue.filter('date', dateFilter);  //全域filter
 
+axios.defaults.withCredentials = true;		// axios 發請求時附帶 cookie
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

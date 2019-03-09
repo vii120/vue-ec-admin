@@ -32,7 +32,7 @@ export default {
   },
   methods: {
     signin(){
-      const api = `${process.env.API_PATH}/signin`;
+      const api = `${process.env.API_PATH}/admin/signin`;
       const vm = this;
       this.$http.post(api, vm.user).then((response) => { //用戶資料用post傳入
         console.log(response.data);
